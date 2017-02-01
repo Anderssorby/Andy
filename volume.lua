@@ -31,7 +31,6 @@ function show_volume_status()
             local volume = string.match(stdout, "(%d?%d?%d%%)")
             if not naughty.is_suspended() then
                 naughty.notify{
-                    text = stdout,
                     title = "Volume " .. volume,
                     timeout = 3, hover_timeout = 0.2,
                     width = 200,
