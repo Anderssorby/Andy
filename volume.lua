@@ -8,9 +8,7 @@ function update_volume()
 		function(stdout, stderr, reason, exit_code)   
 			local volume = string.match(stdout, "(%d?%d?%d)%%")
 
-			if volume ~= nil then 
-                volume = tonumber(string.format("% 3d", volume))
-            end
+            volume = tonumber(string.format("% 3d", volume))
 
 			local volume_icon_name
 
