@@ -2,9 +2,13 @@
 math.randomseed(os.time())
 
 wallpapers = {
-    "delicate-arch-night-stars-landscape.jpg"
+    "wall1.jpg",
+    "wall2.jpg",
+    "wall3.jpg",
+    "wall4.jpg",
+    "wall5.jpg",
 }
-l = 1
+l = 5
 
 return {
     get_random_wallpaper = function ()
